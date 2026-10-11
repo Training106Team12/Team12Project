@@ -1,0 +1,833 @@
+/* =====================================================
+   HEADER
+===================================================== */
+
+.header {
+  width: 100%;
+  background: #ffffff;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.header :global(.row) {
+  min-height: 125px;
+}
+
+
+/* =====================================================
+   LOGO
+===================================================== */
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+
+  color: #315fa8;
+
+  font-size: 25px;
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+.logo sup {
+  font-size: 8px;
+
+  position: relative;
+  top: -8px;
+
+  margin-left: 1px;
+}
+
+
+/* Robot logo */
+
+.logoIcon {
+  width: 38px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #edf7ff;
+
+  border-radius: 50%;
+
+  overflow: hidden;
+}
+
+.logoIcon span {
+  font-size: 22px;
+}
+
+
+/* =====================================================
+   SEARCH
+===================================================== */
+
+.search {
+  width: 100%;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+
+  background: #ffffff;
+
+  border: 1px solid #dfe3e8;
+
+  border-radius: 8px;
+
+  overflow: hidden;
+}
+
+
+/* All categories */
+
+.category {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+
+  padding: 0 15px;
+
+  border: none;
+
+  background: transparent;
+
+  color: #424b57;
+
+  font-size: 14px;
+
+  white-space: nowrap;
+
+  cursor: pointer;
+}
+
+
+/* Vertical line */
+
+.searchLine {
+  width: 1px;
+  height: 25px;
+
+  background: #eeeeee;
+
+  flex-shrink: 0;
+}
+
+
+/* Search input */
+
+.search input {
+  flex: 1;
+
+  min-width: 0;
+
+  height: 100%;
+
+  padding: 0 12px;
+
+  border: none;
+
+  outline: none;
+
+  font-size: 14px;
+
+  color: #333333;
+}
+
+.search input::placeholder {
+  color: #a6acb5;
+}
+
+
+/* Search icon */
+
+.searchIcon {
+  color: #858d98;
+
+  margin-right: 15px;
+
+  flex-shrink: 0;
+}
+
+
+/* =====================================================
+   DESKTOP NAVIGATION
+===================================================== */
+
+.nav {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+}
+
+
+/* First row */
+
+.navTop {
+  display: flex;
+  align-items: center;
+
+  gap: 27px;
+
+  white-space: nowrap;
+}
+
+
+/* Navigation links */
+
+.nav a {
+  display: flex;
+  align-items: center;
+
+  gap: 4px;
+
+  color: #303946;
+
+  text-decoration: none;
+
+  font-size: 15px;
+
+  white-space: nowrap;
+
+  transition: color 0.2s ease;
+}
+
+.nav a:hover {
+  color: #315fa8;
+}
+
+
+/* Contact Us */
+
+.contact {
+  margin-top: 27px;
+}
+
+
+/* =====================================================
+   DESKTOP ICONS
+===================================================== */
+
+.icons {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 15px;
+
+  color: #203f79;
+}
+
+.icons > svg {
+  width: 20px;
+  height: 20px;
+
+  flex-shrink: 0;
+}
+
+
+/* Heart + Cart badge */
+
+.iconBadge {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  flex-shrink: 0;
+}
+
+.iconBadge svg {
+  width: 20px;
+  height: 20px;
+}
+
+
+/* Number */
+
+.iconBadge span {
+  position: absolute;
+
+  top: -10px;
+  right: -8px;
+
+  min-width: 18px;
+  height: 18px;
+
+  padding: 0 4px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ed7d3e;
+
+  color: #ffffff;
+
+  border-radius: 50%;
+
+  font-size: 9px;
+  font-weight: 700;
+}
+
+
+/* =====================================================
+   MOBILE RIGHT
+===================================================== */
+
+.mobileRight {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 15px;
+}
+
+
+/* Mobile icons */
+
+.mobileIcons {
+  display: flex;
+  align-items: center;
+
+  gap: 13px;
+
+  color: #203f79;
+}
+
+.mobileIcons > svg {
+  width: 19px;
+  height: 19px;
+}
+
+
+/* =====================================================
+   HAMBURGER
+===================================================== */
+
+.menuButton {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #e0e3e7;
+
+  border-radius: 7px;
+
+  background: #ffffff;
+
+  color: #203f79;
+
+  cursor: pointer;
+}
+.menuButton svg {
+  width: 21px;
+  height: 21px;
+}
+
+
+/* =====================================================
+   MOBILE MENU
+===================================================== */
+
+.mobileMenu {
+  width: 100%;
+
+  padding: 12px 0 18px;
+
+  border-top: 1px solid #eeeeee;
+}
+
+
+/* =====================================================
+   MOBILE SEARCH
+===================================================== */
+
+.mobileSearch {
+  width: 100%;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+
+  border: 1px solid #e1e4e8;
+
+  border-radius: 7px;
+
+  overflow: hidden;
+
+  margin-bottom: 12px;
+}
+
+.mobileSearch input {
+  flex: 1;
+
+  min-width: 0;
+
+  height: 100%;
+
+  padding: 0 10px;
+
+  border: none;
+}
+
+@media (max-width: 991px) {
+
+  /* نخفي Search تبع الكمبيوتر */
+  .search {
+    display: none !important;
+  }
+
+  /* نخفي القوائم تبع الكمبيوتر */
+  .nav {
+    display: none !important;
+  }
+
+  /* ارتفاع الهيدر */
+  .header :global(.row) {
+    min-height: 75px;
+  }
+
+  /* الأيقونات + الهامبرغر */
+  .mobileRight {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+  }
+
+  .mobileIcons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  /* الهامبرغر */
+  .menuButton {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #e0e3e7;
+    border-radius: 7px;
+
+    background: white;
+    color: #203f79;
+  }
+
+  /* القائمة بعد الضغط */
+  .mobileMenu {
+    width: 100%;
+    padding: 10px 0 15px;
+
+    border-top: 1px solid #eeeeee;
+  }
+
+  /* الروابط تحت بعض */
+  .mobileNav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .mobileNav a {
+    display: block;
+    width: 100%;
+
+    padding: 13px 5px;
+
+    color: #303946;
+    text-decoration: none;
+
+    font-size: 15px;
+
+    border-bottom: 1px solid #eeeeee;
+  }
+
+}
+
+/* =========================================
+   EXTRA CONTENT UNDER CONTACT US
+========================================= */
+
+.contactBox {
+  width: 100%;
+}
+
+
+/* الخط */
+
+.mobileDivider {
+  width: 100%;
+  height: 1px;
+  background: #e5e5e5;
+
+  margin: 18px 0;
+}
+
+
+/* 
+   USER INFO
+ */
+
+.userInfo {
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+
+  padding: 5px 0 10px;
+}
+
+.userImage {
+  width: 70px;
+  height: 70px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+}
+
+.userInfo h4 {
+  margin: 0 0 5px;
+
+  color: #263f72;
+
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.userInfo p {
+  margin: 0;
+
+  color: #52688f;
+
+  font-size: 14px;
+}
+
+
+/* 
+   ACCOUNT LINKS
+= */
+
+.accountLinks {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  column-gap: 30px;
+
+  margin-top: 15px;
+}
+
+.accountLinks > div {
+  display: flex;
+  flex-direction: column;
+
+  gap: 18px;
+}
+
+.accountLinks a {
+  color: #52688f;
+
+  text-decoration: none;
+
+  font-size: 15px;
+}
+
+.accountLinks a:hover {
+  color: #315fa8;
+}
+
+
+/* =========================================
+   IPHONE BOX
+========================================= */
+
+.mobileProduct {
+  width: 100%;
+
+  min-height: 280px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 25px;
+
+  background: #eaf7fc;
+
+  overflow: hidden;
+}
+
+.productText {
+  width: 55%;
+}
+
+.productText p {
+  margin: 0 0 8px;
+
+  color: #58739c;
+
+  font-size: 14px;
+}
+
+.productText h3 {
+  margin: 0 0 12px;
+
+  color: #315fa8;
+
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.productText span {
+  display: block;
+
+  margin-bottom: 22px;
+
+  color: #58739c;
+
+  font-size: 14px;
+}
+
+.productText a {
+  color: #35a9b7;
+
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.productImages img {
+  width: 43%;
+
+  max-height: 350px;
+
+  object-fit: contain;
+  transform: scale(3.5);
+ align-self: self-end;
+}
+
+
+/* =========================================
+   MOBILE FOOTER
+========================================= */
+
+.mobileFooter {
+  text-align: center;
+
+  padding: 25px 5px 5px;
+
+  color: #a5a5a5;
+
+  font-size: 11px;
+}
+
+.mobileFooter p {
+  margin: 3px 0;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 991px) {
+
+  .contactBox {
+    width: 100%;
+  }
+
+  .userInfo {
+    padding: 5px 0 10px;
+  }
+
+  .accountLinks {
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: 20px;
+  }
+
+  .mobileProduct {
+    min-height: 260px;
+
+    padding: 20px;
+  }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 575px) {
+
+  .userImage {
+    width: 62px;
+    height: 62px;
+  }
+
+  .userInfo h4 {
+    font-size: 17px;
+  }
+
+  .userInfo p {
+    font-size: 13px;
+  }
+
+  .accountLinks a {
+    font-size: 14px;
+  }
+
+  .mobileProduct {
+    min-height: 240px;
+
+    padding: 18px;
+  }
+
+  .productText h3 {
+    font-size: 18px;
+  }
+
+  .mobileProduct img {
+    width: 45%;
+  }
+
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown > a {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 230px;
+  margin: 0;
+  padding: 15px 0;
+  list-style: none;
+  background: white;
+  border: 1px solid #eeeeee;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  display: none;
+  z-index: 1000;
+}
+
+.dropdown:hover .dropdownMenu {
+  display: block;
+}
+
+.dropdownMenu li {
+  width: 100%;
+}
+
+.dropdownMenu li a {
+  display: block;
+  width: 100%;
+  padding: 9px 20px;
+  color: #253d73;
+  text-decoration: none;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.dropdownMenu li a:hover {
+  background: #f5f7fa;
+  color: #315fa8;
+}
+
+/* MOBILE DROPDOWN */
+
+.mobileDropdown {
+  width: 100%;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.mobileDropdown > button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  padding: 13px 5px;
+
+  border: 0;
+  background: transparent;
+
+  color: #303946;
+  font-size: 15px;
+  font-family: inherit;
+  text-align: left;
+
+  cursor: pointer;
+}
+
+.mobileDropdown > button svg {
+  transition: transform 0.2s ease;
+}
+
+.rotateArrow {
+  transform: rotate(180deg);
+}
+
+.mobileSubMenu {
+  list-style: none;
+
+  margin: 0;
+  padding: 0 0 8px 15px;
+
+  background: #ffffff;
+}
+
+.mobileSubMenu li a {
+  display: block;
+
+  padding: 10px 5px;
+
+  color: #52688f;
+  text-decoration: none;
+
+  font-size: 14px;
+}
+
+.mobileSubMenu li a:hover {
+  color: #315fa8;
+}
+
+.productImages {
+  width: 43%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
